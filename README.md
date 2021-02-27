@@ -2,3 +2,4 @@
 
 - [vue2+rem](https://github.com/WhatProblem/vue-base/tree/master/vue-rem)
 - [vue3+vw](https://github.com/WhatProblem/vue-base/tree/master/vue3-vw)
+- [vite+vue3+vw](https://github.com/WhatProblem/vue-base/tree/master/vite-vw)
