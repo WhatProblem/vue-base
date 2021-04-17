@@ -1,0 +1,95 @@
+{
+  "name": "v3-element-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run serve",
+    "serve": "vue-cli-service serve --mode development",
+    "build:prod": "vue-cli-service build --mode production",
+    "build:stage": "vue-cli-service build --mode staging",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "clipboard": "^2.0.8",
+    "codemirror": "^5.60.0",
+    "core-js": "^3.8.3",
+    "driver.js": "^0.9.8",
+    "dropzone": "^5.9.2",
+    "echarts": "^5.0.2",
+    "element-plus": "^1.0.2-beta.37",
+    "file-saver": "^2.0.5",
+    "fuse.js": "^6.4.6",
+    "js-cookie": "^2.2.1",
+    "jsonlint": "^1.6.3",
+    "jszip": "^3.6.0",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "path-to-regexp": "^6.2.0",
+    "screenfull": "^5.1.0",
+    "script-loader": "^0.7.2",
+    "sortablejs": "^1.13.0",
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.3",
+    "vue-splitpane": "^1.0.6",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^4.0.0",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0-alpha.8",
+    "@vue/cli-plugin-eslint": "~5.0.0-alpha.8",
+    "@vue/cli-plugin-router": "~5.0.0-alpha.8",
+    "@vue/cli-plugin-vuex": "~5.0.0-alpha.8",
+    "@vue/cli-service": "~5.0.0-alpha.8",
+    "@vue/compiler-sfc": "^3.0.4",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "autoprefixer": "^10.2.5",
+    "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.5.1",
+    "connect": "^3.7.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "mockjs": "^1.1.0",
+    "path-browserify": "^1.0.1",
+    "plop": "^2.7.4",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "serve-static": "^1.14.1",
+    "svg-sprite-loader": "^6.0.2",
+    "svgo": "^2.3.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": "vue-cli-service lint"
+  }
+}
