@@ -122,6 +122,27 @@ export const asyncRoutes = [
       },
     ]
   },
+  {
+    path: '/ts',
+    component: Layout,
+    alwaysShow: true, // will always show the root menu
+    redirect: '/ts/detail',
+    name: 'TS',
+    meta: {
+      title: 'TS页面',
+      icon: 'el-icon-warning'
+    },
+    children: [
+      {
+        path: 'detail',
+        component: () => import('@/views/TS/TS'),
+        name: 'TS',
+        meta: { 
+          title: 'TS页面'
+        }
+      },
+    ]
+  },
 
   // 404 page must be placed at the end !!!
   // 区别于vue2的path: '*' vue3使用 path: '/:pathMatch(.*)*'

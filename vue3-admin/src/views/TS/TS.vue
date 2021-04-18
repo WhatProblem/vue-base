@@ -24,16 +24,25 @@
   </el-dialog>
 </template>
 
-<script>
+<script lang="ts">
+import { ref, reactive, Ref } from 'vue'
 export default {
-  name: "Home",
-  components: {},
-  data() {
-    return {
-      visible: false,
-      formLabelWidth: '120px',
-      form: {
-        name: '',
+	name: 'TS',
+
+	// setup(props, {emit, slots, attrs}) {
+	setup() {
+		let visible: Ref<boolean> = ref(false)
+		const showDialog = () =>{
+			console.log(visible)
+			visible.value = true
+		}
+
+		return {
+			showDialog,
+			visible,
+			formLabelWidth: ref('120px'),
+			form: reactive({
+				name: '',
         region: '',
         date1: '',
         date2: '',
@@ -41,13 +50,8 @@ export default {
         type: [],
         resource: '',
         desc: ''
-      }
-    };
-  },
-  methods: {
-    showDialog() {
-      this.visible = true
-    },
-  }
+			})
+		}
+	}
 }
 </script>

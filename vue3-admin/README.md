@@ -24,3 +24,10 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 当前项目由 vue-element-admin 升级而来，具体文档可参考 [vue-element-admin](https://panjiachen.github.io/vue-element-admin-site/zh/)
+
+### js + ts 分支，可在原有 js 项目混用 ts，方便原来的js组件迁移
+
+[x] vue3
+[X] js
+[x] TS
+[x] Element-plus
